@@ -9,26 +9,21 @@ body {
   padding:0;
   font-weight:bold;
 }
-
 h1, h2, h3, p {
   margin:0;
 }
-
 em, a {
   font-style:normal;
   color:#8dbd0c;
 }
-
 a {
   background: #34d0e7;
   color:#000;
   text-decoration:none;
 }
-
 img {
   width:100%;
 }
-
 div {
   cursor:pointer;
   cursor:hand;
@@ -38,11 +33,9 @@ div {
   padding:75px;
   line-height:97%;
 }
-
 div.center {
   text-align:center;
 }
-
 div.imageText {
   text-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
@@ -58,7 +51,7 @@ window.onload = function() {
         for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
         e.style.display = 'inline';
         e.style.fontSize = i + 'px';
-        if (e.firstChild &amp;&amp; e.firstChild.nodeName === 'IMG') {
+        if (e.firstChild && e.firstChild.nodeName === 'IMG') {
             document.body.style.backgroundImage = 'url("' + e.firstChild.src + '")';
             e.firstChild.style.display = 'none';
             if ('classList' in e) e.classList.add('imageText');
@@ -69,7 +62,7 @@ window.onload = function() {
         if (ti !== undefined) window.clearInterval(ti);
         if (t > 0) ti = window.setTimeout(fwd, (t * 1000));
         while ((e.offsetWidth > window.innerWidth ||
-            e.offsetHeight > window.innerHeight) &amp;&amp; i >= 0) {
+            e.offsetHeight > window.innerHeight) && i >= 0) {
             e.style.fontSize = (i -= 2) + 'px';
         }
         e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
