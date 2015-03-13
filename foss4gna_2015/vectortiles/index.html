@@ -1,0 +1,225 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type='text/css'>
+body {
+  font-family: 'Kievit Offc Pro';
+  letter-spacing:-3px;
+  background:#00a0f2;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:5;
+  font-weight:bold;
+}
+h1, h2, h3, p {
+  margin:0;
+}
+em, a {
+  font-style:normal;
+  color: lime;
+  line-height: 130%;
+}
+a {
+  background: #fff;
+  color:#00a0f2;
+  text-decoration:none;
+}
+
+img {
+  width:100%;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+}
+div.center {
+  text-align:center;
+}
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), ti;
+    if (!s) return;
+    big = { current: 0, forward: fwd, reverse: rev, go: go, length: s.length };
+    function go(n) {
+        big.current = n;
+        var i = 1e3, e = s[n], t = parseInt(e.dataset.timeToNext || 0, 10);
+        document.body.className = e.dataset.bodyclass || '';
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline';
+        e.style.fontSize = i + 'px';
+        if (e.firstChild && e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url("' + e.firstChild.src + '")';
+            e.firstChild.style.display = 'none';
+            if ('classList' in e) e.classList.add('imageText');
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        if (ti !== undefined) window.clearInterval(ti);
+        if (t > 0) ti = window.setTimeout(fwd, (t * 1000));
+        while ((e.offsetWidth > window.innerWidth ||
+            e.offsetHeight > window.innerHeight) && i >= 0) {
+            e.style.fontSize = (i -= 2) + 'px';
+        }
+        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() { go(++big.current % (s.length)); };
+    function fwd() { go(Math.min(s.length - 1, ++big.current)); }
+    function rev() { go(Math.max(0, --big.current)); }
+    document.onkeydown = function(e) {
+        if (e.which === 39 || e.which === 34 || e.which === 40) fwd();
+        if (e.which === 37 || e.which === 33 || e.which === 38) rev();
+    };
+    document.ontouchstart = function(e) {
+        var x0 = e.changedTouches[0].pageX;
+        document.ontouchend = function(e) {
+            var x1 = e.changedTouches[0].pageX;
+            if (x1 - x0 < 0) fwd();
+            if (x1 - x0 > 0) rev();
+        };
+    };
+    function parse_hash() {
+        return Math.max(Math.min(s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) big.current = parse_hash() || big.current;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== big.current) go(c);
+    };
+    go(big.current);
+};
+</script></head><body>
+<!--
+<div><img src='' /> </div>
+<div></div>
+-->
+
+<!-- INTRO -->
+<div>hi, i'm <em>@amyleew</em></div>
+<div>designer &amp; navigator <em>@mapbox</em></div>
+<div><img src="gifs/newbie.gif">GIS newbie.</div>
+<!-- DESIGN APPROACH -->
+<div><img src="images/windowseat.jpg">terrain</div>
+<div><img src="images/GoPoster.jpg">aesthetic-approach</div>
+<!-- FIRST PROJECT -->
+<div>first mapping project...</div>
+<div><img src="images/forall.jpg">one<br>map<br>for<br>all.</div>
+<div><img src="images/gensler_styleGuide.png"></div>
+<div><img src="gifs/find-data.gif">find and plot data</div>
+<div><img src="images/science.jpg"></div>
+<!-- TILEMILL -->
+<div><img src="images/tilemill.png">hello <em>tilemill</em></div>
+<div>biggest hurdles:</div>
+<div><img src="images/no-forall.jpg">no<br>one<br>map<br>for<br>all.</div>
+<div><img src="images/renderslow2.jpg">renders slooowly</div>
+<div><img src="images/upload-fail.png"></div>
+<div><img src="images/gensler_Map.jpg"></div>
+<!-- STUDIO -->
+<div><img src="images/mapboxstudio.jpg"></div>
+<div><img src="images/vectortiles.jpg">hello <em>vector tiles</em></div>
+<div><img src="images/samedata.png"></div>
+<div><img src="images/foss4g.png"></div>
+<div><img src="images/wheatpaste.png"></div>
+<div><img src="images/satellite.png"></div>
+<div><img src="images/comic.png"></div>
+<div><img src="images/highcontrast.png"></div>
+<div><img src="images/samedata.png">thank you <em>vector tiles</em></div>
+<!-- STUDIO -->
+<div><img src="images/forall.jpg">one<br>map<br>for<br>all.</div>
+<div><img src="images/print-truck.jpg"></div>
+<div><img src="images/print.jpg"></div>
+<div><em>faster designing</em></div>
+<div><em>customize data</em></div>
+<!-- PROCESS -->
+<div>demos:<br>
+<ul><li><em>build &amp; style</em> local VTs</li>
+<li><em>4 tips for optimizing</em> VTs</li>
+<li><em>build &amp; style</em> remote VTs</li>
+</ul>
+</div>
+<div><img src="images/local_vts.png"><a href="localvts.html" target="_blank">build &amp; style</a> (local) VTs</div>
+<!-- POWER TIPS -->
+<div><em>4 tips for optimizing</em> VTs</div>
+<div><img src="gifs/minzoom.gif"><em>1: minzoom</em> <br>when to start displaying (&amp; storing data)</div>
+<div><img src="gifs/maxzoom.gif"><em>2: maxzoom</em> <br>when to stop storing (but keep displaying) data</div>
+<div><img src="gifs/crazybuffer.gif"><em>3: buffers</em> <br>amount of data padding per tile</div>
+<div>4: what's the <em>geom type</em>?</div>
+
+<div>geom type: <br><em>points</em></div>
+
+<div>1: minzoom</div>
+<div><img src="images/points_state.png"></div>
+<div><img src="images/points_city.png"></div>
+<div><img src="images/points_street.png"></div>
+<div><img src="images/points_streetD.png"></div>
+
+<div>2: maxzoom</div>
+<div><img src="images/points_city.png">avoid dense data clusers</div>
+<div><img src="images/pts_buffer_z12.png"></div>
+<div><img src="images/pts_buffer_z13.png"></div>
+<div><img src="images/pts_buffer_z14.png"></div>
+
+<div>3: buffers</div>
+<div><img src="images/points_buffer0.png">avoid clipped text on labels</div>
+<div><img src="images/points_buffer0.png"></div>
+<div><img src="images/points_buffer64.png"></div>
+
+<div>geom type: <br><em>lines and polys</em></div>
+
+<div>1: minzoom</div>
+<div><img src="images/lines_min1.png"></div>
+<div><img src="images/lines_min2.png"></div>
+<div><img src="images/lines_min3.png"></div>
+<div><img src="images/lines_min4.png"></div>
+
+<div>2: maxzoom</div>
+<div><img src="images/lines_max1.png">set, then<br>test by overzoomming</div>
+<div><img src="images/lines_max1.png"></div>
+<div><img src="images/lines_max2.png"></div>
+<div><img src="images/lines_max3.png"></div>
+<div><img src="images/lines_max4.png"></div>
+<div><img src="images/lines_max_z1.png"></div>
+<div><img src="images/lines_max_z2.png"></div>
+<div><img src="images/lines_max_z3.png"></div>
+<div><img src="images/lines_max_z4.png"></div>
+
+<div>3: buffers</div>
+<div><img src="images/line_buffers.gif">test it</div>
+
+<div><img src="images/remote_vts.png"><a href="remotevts.html" target="_blank">build &amp; style</a> (remote) VTs</div>
+
+<div><em>possiblities</em></div>
+
+<div><img src="images/overpass_turbo.png"><a href="https://www.mapbox.com/guides/overpass-turbo/" target="_blank">overpass-turbo.eu</a> <em>curate OSM</em></div>
+
+<div><img src="images/postgis.png">PostGIS + SQL queries</div>
+<div><img src="images/postgis.png"></div>
+<div><img src="images/at1.png"></div>
+<div><img src="images/at2.png"></div>
+<div><img src="images/at3.png"></div>
+
+<div><img src="images/osm-cycling.png">OSM + PostGIS (planet querying)</div>
+<div><img src="images/osm-cycling.png"></div>
+<div><img src="images/cycledata1.png"></div>
+<div><img src="images/cycledata2.png"></div>
+
+<div><em>link love</em><ul>
+<li><a href="https://www.mapbox.com/mapbox-studio/">Mapbox Studio</a></li>
+<li><a href="https://www.mapbox.com/developers/vector-tiles/">Vector Tiles</a></li>
+<li><a href="https://www.mapbox.com/mapbox-studio/source-manual/">Source Manual</a></li>
+<li><a href="https://www.mapbox.com/mapbox-studio/source-quickstart/">Source Quickstart</a></li>
+<li><a href="https://www.mapbox.com/guides/overpass-turbo/">Getting more out of OSM data</a></li>
+<li><a href="https://www.mapbox.com/mapbox-studio/postgis-manual/">Postgis and SQL Manual</a></li>
+</ul></div>
+
+<div>thanks and questions<br><em>@amyleew</em></div>
