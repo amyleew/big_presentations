@@ -6,7 +6,6 @@ body {
   margin:0;
   padding:0;
   font-weight:bold;
-  letter-spacing: -1px;
 }
 
 body.bg-full {
@@ -28,7 +27,6 @@ h2 { /* color change */
   font-style:normal;
   background-size: 100%;
   color: #0d82fa;
-  letter-spacing: 0px;
   line-height: 120%;
 }
 
@@ -43,7 +41,6 @@ em { /* color and bg */
   font-style:normal;
   color: #0d82fa;
   background-color: #fff;
-  letter-spacing: 0px;
   line-height: 120%;
 }
 
@@ -51,6 +48,7 @@ a {
   background: #0d82fa;
   color:#000;
   text-decoration:underline;
+  line-height: 120%;
 }
 
 div.italic {
