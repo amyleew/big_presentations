@@ -1,0 +1,90 @@
+body {
+  font-family: 'Kievit Offc Pro';
+  letter-spacing:-2px;
+  background:#000;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+}
+
+h1, h2, h3, p {
+  margin:0;
+}
+
+em, a {
+  font-style:normal;
+  color:#0d82fa;
+}
+
+a {
+  background: #0d82fa;
+  color:#333;
+  text-decoration:underline;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 10%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 10%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+
+div.italic {
+  font-family: 'Kievit Offc Pro';
+  letter-spacing:-2px;
+  background:#000;
+  background-size:80%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:italic;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+}
+
+div.center {
+  text-align:center;
+}
+
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+pre {
+    margin:0;
+    padding:0.2em;
+    background:#fff;
+    color:#000;
+    font-weight:normal;
+}
+
+pre em {
+    color:#000;
+    background:yellow;
+}
