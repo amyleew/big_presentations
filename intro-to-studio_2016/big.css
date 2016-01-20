@@ -1,7 +1,7 @@
 body {
   font-family: 'Kievit Offc Pro';
   letter-spacing:-2px;
-  background:#000;
+  background:#333;
   background-size:100%;
   color:#fff;
   margin:0;
@@ -13,20 +13,38 @@ h1, h2, h3, p {
   margin:0;
 }
 
-em, a {
-  font-style:normal;
-  color:#0d82fa;
+li {
+  font-size: 80%;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 110%;
 }
 
+
+/* bold font */
+em, a {
+  font-style:normal;
+  /* merriweather blue */
+  color: #4BC5A8;
+}
+
+/* link color */
 a {
-  background: #0d82fa;
-  color:#333;
   text-decoration:underline;
+  color:#607EEA;
+  font-size: 100%;
+}
+
+/* highlighter */
+a.highlighter {
+  background: #fff;
+  color:#444;
+  text-decoration:none;
 }
 
 img.bg {
   /* Set rules to fill background */
-  min-height: 10%;
+  min-height: 30%;
   min-width: 1024px;
 
   /* Set up proportionate scaling */
@@ -46,7 +64,6 @@ img.bg {
   }
 }
 
-
 div.italic {
   font-family: 'Kievit Offc Pro';
   letter-spacing:-2px;
@@ -59,13 +76,12 @@ div.italic {
 }
 
 div {
-  cursor:pointer;
-  cursor:hand;
   position:absolute;
   top:0px;
   left:0px;
   padding:75px;
-  line-height:97%;
+  line-height:110%;
+  border:0;
 }
 
 div.center {
@@ -76,12 +92,24 @@ div.imageText {
   text-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
+
+notes {
+    display:none;
+}
+/* normally not good, but ok in context of full screen directional navigation */
+:focus {
+    outline: 0;
+}
+
 pre {
     margin:0;
-    padding:0.2em;
+    padding: 6em;
     background:#fff;
     color:#000;
     font-weight:normal;
+    line-height: 250%;
+    letter-spacing: 1px;
+    font-size: 130%;
 }
 
 pre em {
