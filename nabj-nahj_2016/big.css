@@ -14,10 +14,10 @@ h1, h2, h3, p {
 }
 
 li {
-  font-size: 90%;
+  font-size: 110%;
   font-weight: normal;
-  letter-spacing: -0.15px;
-  line-height: 150%;
+  letter-spacing: 0.15px;
+  line-height: 160%;
   font-style: italic;
   font-weight: 100;
 }
@@ -38,6 +38,7 @@ em.subhead {
   font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
+  padding-bottom: 25px;
 }
 
 
@@ -67,6 +68,19 @@ a.highlighter-blue {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+a.highlighter-blue-li {
+  background: #9facd8;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  line-height: 140%;
+}
+
 
 a.highlighter-blue-sm {
   background: #fff;

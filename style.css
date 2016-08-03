@@ -1,0 +1,63 @@
+body {
+  font-family: 'Kievit Offc Pro';
+  letter-spacing: 0px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 130%;
+  background-image: url('images/amylee_steam2016.png')
+}
+
+.presos {
+  background-color: rgba(255,255,255,0.85);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 65px;
+  padding-left: 50px;
+  padding-right: 20px;
+  max-width: 55%;
+  float: right;
+  margin-top: 160px;
+}
+
+.light {
+  color: #999;
+  font-weight: lighter;
+  font-size: 80%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -12px;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #999;
+}
+
+.end {
+  margin-bottom: 35px;
+}
+
+em, a {
+  font-style: bold;
+  line-height: 170%;
+}
+
+a:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+}
