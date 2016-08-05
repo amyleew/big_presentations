@@ -117,6 +117,10 @@ img.bg {
   }
 }
 
+img.norepeat {
+  background-repeat: no-repeat;
+}
+
 div.italic {
   font-family: 'Kievit Offc Pro';
   letter-spacing:-2px;
