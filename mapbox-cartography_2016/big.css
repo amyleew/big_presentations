@@ -9,6 +9,18 @@ body {
   font-weight:bold;
 }
 
+/* background repeat */
+body.background-repeat {
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+/* background center */
+body.background-center {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 h1, h2, h3, p {
   margin:0;
 }
