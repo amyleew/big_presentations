@@ -34,12 +34,33 @@ li {
   font-weight: 100;
 }
 
+/* ordered, numbered, smaller list*/
+ol.mini li {
+  font-size: 100%;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  line-height: 110%;
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 15%;
+}
+
 /* bold font */
 em, a {
   font-weight: 500;
   /* merriweather blue */
   color: #4BC5A8;
 }
+
+/* bold font */
+em.page, a {
+  font-weight: 500;
+  /* merriweather blue */
+  color: #4BC5A8;
+  font-size: 40px;
+  line-height: 60%;
+}
+
 
 /* thin spaced font */
 em.subhead {
@@ -79,6 +100,7 @@ a.highlighter-blue {
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 90px;
 }
 
 a.highlighter-blue-li {
@@ -108,6 +130,22 @@ a.highlighter-blue-sm {
 }
 
 img.bg {
+  /* Set rules to fill background */
+  min-height: 30%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 10%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* regular sized image */
+img.norm {
   /* Set rules to fill background */
   min-height: 30%;
   min-width: 1024px;
