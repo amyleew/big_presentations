@@ -22,19 +22,24 @@
   <div><img class='norm' src='images/design-build-process.png' /></div>
   <div><img class='norm' src='images/version-control.gif' /></div>
   <div><img class='norm' src='images/personal-versioning.png' /></div>
+  <div><img class='norm' src='images/personal-versioningA.png' /></div>
+  <div><img class='norm' src='images/personal-versioningB.png' /></div>
   <div><img class='norm' src='images/github.png' /></div>
-  <div><img class='norm' src='images/git-collaborate.png' /></div>
-  <div><img class='norm' src='images/important-tests.png' /></div>
+  <div><img class='norm' src='images/github.gif' /></div>
+  <div><img class='norm' src='images/githubfailA.png' /></div>
+  <div><img class='norm' src='images/githubfailB.png' /></div>
+  <div><img class='norm' src='images/githubfail.gif' /></div>
 
   <!-- THE PROMISE OF TESTING -->
   <div><ul><a href='#' class='highlighter-blue'>I'll talk to you in the future through my tests</a><br></ul></div>
-  <div><ul><a href='#' class='highlighter-blue-sm'>If you haven't interacted with me in a while that's ok. You probably ran into one of my tests.</a><br></ul></div>
-  <div><ul><a href='#' class='highlighter-blue-sm'>I want you to see that great testing is not a kind of engineering masochism. To me it's a way to be generous to others and to respect and protect our time as a team.</a><br></ul></div>
+<!--   <div><ul><a href='#' class='highlighter-blue-sm'>If you haven't interacted with me in a while that's ok. You probably ran into one of my tests.</a><br></ul></div> -->
+  <div><img class='norm' src='images/important-tests.png' /></div>
+  <div><ul><a href='#' class='highlighter-blue-sm'><!-- I want you to see that great testing is not a kind of engineering masochism.  -->To me it's a way to be generous to others and to respect and protect our time as a team.</a><br></ul></div>
   <div><ul><a href='#' class='highlighter-blue-sm'>Automated testing is our first line of defense from growing into a giant company with a dedicated QA department.</a><br></ul></div>
   <div><img class='norm' src='images/js-joke.png' /></div>
 
   <!-- WHAT ARE TESTS -->
-  <div><ul><a href='#' class='highlighter-blue'>But, what is a test?</a><br></ul></div>
+  <div><ul><a href='#' class='highlighter-blue'>Cool, but.<br>What exactly is a test?</a><br></ul></div>
   <div><ul><a href='#' class='highlighter-blue-sm'>A test is a program that runs my code so I don't have to.</a><br></ul></div>
   <div><img class='norm' src='images/npm-test.gif' /></div>
   <div><img class='norm' src='images/circle-test.gif' /></div>
@@ -44,27 +49,29 @@
   <div><ul><a href='#' class='highlighter-blue'>Writing tests for deisgn.</a><br></ul></div>
   <div><img class='norm' src='images/ia-process.png' /></div>
   <div><img class='norm' src='images/samedata.gif' /></div>
+  <div><img class='norm' src='images/mapbox-gl-style-spec.gif' /><a href='https://www.mapbox.com/mapbox-gl-style-spec/' class='highlighter-blue-mini'>mapbox-gl-style-spec/</a></div>
 
-  <!-- UNIT TESTS -->
-  <div><ul><a href='#' class='highlighter-blue'>Unit testing</a><br></ul></div>
+
+  <!-- UNIT TESTS & INTEGRATION TESTS-->
+  <div><ul><a href='#' class='highlighter-blue'>Unit tests</a><br></ul></div>
   <div><ul><a href='#' class='highlighter-blue-sm'>Unit testing is a process in which the smallest testable parts of an app, are individually and independently scrutinized for proper operation.</a></ul></div>
-  <div><ul><a href='#' class='highlighter-blue-sm'>Unit testing involves only those characteristics that are vital to the performance of the unit under test.</a></ul></div>
   <div><ul><a href='#' class='highlighter-blue-sm'>This allows developers to modify the source code without breaking the rest of the app.</a></ul></div>
-  <div><ul><a href='#' class='highlighter-blue-sm'>Unit testing can be time-consuming and tedious, demands patience and thoroughness on the part of the dev team. And it requires rigorously maintained docs.</a></ul></div>
+  <div><ul><a href='#' class='highlighter-blue-sm'>Unit testing can be time-consuming and tedious, demands patience and thoroughness on the part of the dev team, and it requires rigorously maintained docs.</a></ul></div>
 
   <!-- UNIT TESTS: MAKI -->
-  <div><ul><a href='#' class='highlighter-blue'>Unit testing: Phase I</a><br></ul></div>
+  <div><ul><a href='#' class='highlighter-blue'>Unit tests:<br> Maki icons</a><br></ul></div>
   <div><img class='norm' src='images/unit-maki.png' /></div>
   <div><img class='norm' src='images/unit1_runTape.png' /><!-- require `tape` node module to run tests --></div>
   <div><img class='norm' src='images/unit2_addStyles.png' /><!-- read styles to check --></div>
   <div><img class='norm' src='images/maki-styles.png' /><!-- the style list test is reading from --></div>
   <div><img class='norm' src='images/unit3_readStyles.png' /><!-- reading from style list --></div>
+  <div><img class='norm' src='images/iterate-sprites.gif' /><!-- looping thru all svg files --></div>
   <div><img class='norm' src='images/unit4_checkNames.png' /><!-- loop the entire `makiStreets` list to compare `.svg` files --></div>
   <div><img class='norm' src='images/maki-list.png' /><!-- `makiStreets` list is populated from a formatted, required node module --></div>
   <div><img class='norm' src='images/unit5_stop.png' /></div>
 
   <!-- UNIT TESTS: SPRITEZERO -->
-  <div><ul><a href='#' class='highlighter-blue'>Unit testing: Phase II</a><br></ul></div>
+  <div><ul><a href='#' class='highlighter-blue'>Unit tests:<br> Compare spritesheets</a><br></ul></div>
   <div><img class='norm' src='images/unit0.png' /><!-- spritezero --></div>
   <div><img class='norm' src='images/unit0_1testing.png' /><!-- require `tape` node module to run tests --></div>
   <div><img class='norm' src='images/unit0_2loopkeys.png' /><!-- loop all the objects --></div>
@@ -72,23 +79,26 @@
   <div><img class='norm' src='images/unit0_4generateActual.png' /><!-- reading from style list --></div>
   <div><img class='norm' src='images/unit0_5update.png' /><!-- loop the entire `makiStreets` list to compare `.svg` files --></div>
   <div><img class='norm' src='images/unit0_6checkMatch.png' /><!-- loop the entire `makiStreets` list to compare `.svg` files --></div>
+  <div><img class='norm' src='images/spritesheet-compare.png' /><!-- loop the entire `makiStreets` list to compare `.svg` files --></div>
+  <div><img class='norm' src='images/unit_expected.png' /><!-- loop the entire `makiStreets` list to compare `.svg` files --></div>
 
   <!-- INTEGRATION TESTS -->
-  <div><ul><a href='#' class='highlighter-blue'>Integration testing</a><br></ul></div>
+  <div><ul><a href='#' class='highlighter-blue'>Integration tests</a><br></ul></div>
   <div><ul><a href='#' class='highlighter-blue-sm'>Integration testing is a process in which program units are combined and tested in multiple ways.</a></ul></div>
-  <div><ul><a href='#' class='highlighter-blue-sm'>The process concludes with multiple tests in which scenarios are designed to mimic those it will encounter in customers' computers, systems and networks.</a></ul></div>
+  <div><ul><a href='#' class='highlighter-blue-sm'>This process includes tests designed to mimic scenarios encountered by users (passing and failing).</a></ul></div>
 
   <!-- INTEGRATION TESTS: NEXT STEPS -->
   <div><ul><a href='#' class='highlighter-blue'>Integration testing: Next Steps</a><br></ul></div>
   <!-- INTEGRATION TESTS: IMAGES -->
-  <div><ul><a href='#' class='highlighter-w'>Studio should tell you ...</a><br></ul>
+  <div><ul><a href='#' class='highlighter-w'>Studio should check your images.</a><br></ul>
     <ul class='norm'>
       <li>When you have an unused `icon`.</li>
       <li>When you have a missing `icon`.</li>
       <li>When you have an incorrectly formatted `icon`, i.e. size, color.</li>
     </ul>
   </div>
-  <div><ul><a href='#' class='highlighter-w'>Rules ...</a><br></ul>
+  <div><img src='images/integration-studio.png'></div>
+<!--   <div><ul><a href='#' class='highlighter-w'>Rules ...</a><br></ul>
     <ul class='norm'>
       <li>Check that expected `maki` icons (`iconset-mapbox_streets_icons.json`) are exist on the spritesheet, `sprites.mapbox.streets-v9.json`.</li>
       <li>Make sure the style defines each `{maki}` on the spritesheet.</li>
@@ -96,19 +106,18 @@
       <li>Follow guidelines for `highway-sheild` styling, i.e.</li>
       <li>Ensure `rail-icon` <a href='https://github.com/mapbox/rail-icons/wiki/Design-guidelines'>colors match Mapbox Streets color scheme</a></li>
     </ul>
-  </div>
+  </div> -->
   <!-- INTEGRATION TESTS: CARTO RULES -->
-  <div class='norm'><!--<ul> <a href='#' class='highlighter-w'> -->Cartographic rules ensure a consistent visual relationship between the vector tile data.<!-- </a> </ul>--></div>
-  <div class='norm'>Preventing visual errors by ensuring certain data features are styled according to determined standards.</div>
-  <div><ul><a href='#' class='highlighter-w'>Studio should tell you ...</a><br></ul>
+  <div><ul><a href='#' class='highlighter-w'>Studio should check your cartography.</a><br></ul>
     <ul class='norm'>
-      <li>Required **features** are styled. i.e. Disputed boundaries must always be styled, at least one `visible` `admin` layer should have a `disputed=1` set for it's layer definition.</li>
-      <li>If styled, certain **features** required other **features** also be styled. i.e. `minor_rail` is only styled if `major_rail` is styled or if `national_parks` then `parks` also must be styled.</li>
-      <li>Certain **features** must be styled in a particular order. i.e. `bridge` layers must sit above `road` layers which must sit above `tunnel` layers.</li>
-      <li>Certain **features** have specific stylistic requirements, i.e. `highway-shields` must be set to `placement=line` at `z12+`.</li>
+      <li>Certain types features must be styled. i.e. disputed boundaries</li>
+      <li>If styled, certain **features** required other **features** also be styled. i.e. if national_parks are styled, parks also must be styled.</li>
+      <li>Certain features must be styled in a particular order. i.e. `bridge` layers must sit above `road` layers which must sit above `tunnel` layers.</li>
+      <li>Certain features have specific stylistic requirements, i.e. `highway-shields` must be set to `placement=line` at `z12+`.</li>
     </ul>
   </div>
-  <div><ul><a href='#' class='highlighter-w'>Rules ...</a><br></ul>
+  <div><img class='norm' src='images/ia-process.png' /></div>
+<!--   <div><ul><a href='#' class='highlighter-w'>Rules ...</a><br></ul>
     <ul class='norm'>
       <li>Check that `highway_sheilds` are set to `line` at `z12+`</li>
       <li>Require separate style layer for `disputed` boundaries</li>
@@ -122,9 +131,10 @@
       <li>any vector terrain layers should be below `water`</li>
       <li>Correct order for `scaleranks` from the same subset (pois, place, country)</li>
     </ul>
-  </div>
-
-
+  </div> -->
+<div><ul><em>thanks. questions?</em></ul>
+<a class='highlighter-wb' href="http://amyleew.github.io/big_presentations/nacis2016_tests/#0">Software Testing:<br> How "Tests" Can Improve Map Design</a><br><br>
+<a class='highlighter-w' href="http://twitter.com/amyleew">@amyleew</a></div>
 
 </body>
 

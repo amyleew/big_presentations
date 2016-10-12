@@ -9,12 +9,6 @@ body {
   font-weight:bold;
 }
 
-body div.norm {
-  font-family: 'Kievit Offc Pro';
-  font-weight: 100;
-  line-height: 110%;
-}
-
 /* background repeat */
 body.background-repeat {
     background-size: auto;
@@ -135,6 +129,17 @@ a.highlighter-w {
   font-size: 40px;
 }
 
+a.highlighter-wb {
+  background: #9facd8;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
 a.highlighter-blue {
   background: #9facd8;
   color: #fff;
@@ -171,6 +176,19 @@ a.highlighter-blue-sm {
   vertical-align: middle;
   text-align: left;
   font-size: 20%;
+}
+
+a.highlighter-blue-mini {
+  background: #fff;
+  color:#444;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 10%;
 }
 
 img.bg {
