@@ -138,6 +138,7 @@ a.highlighter-wb {
   padding-top: 5px;
   padding-bottom: 10px;
   font-size: 40px;
+  line-height: 135%;
 }
 
 a.highlighter-blue {
@@ -148,7 +149,7 @@ a.highlighter-blue {
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 125%;
 }
 
