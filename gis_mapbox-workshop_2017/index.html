@@ -207,10 +207,39 @@
     <ul class='norm'>
       <li>In jsbin, open the <em>javascript</em> panel.</li>
       <li>View the <a href='https://gist.githubusercontent.com/anonymous/1c343999f2c7573b08566c1a59834691/raw/e85d3208a5fbd8cc1781d3592717ce009027941d/map.geojson'><em>.geojson</em></a></li>
-      <li>Add the line <a class='highlighter' href='#'>var url = 'add-URL-here';</a></li>
+      <li>Add the line <br><a class='highlighter' href='#'>var url = 'add-URL-here';</a></li>
+    </ul>
+  </div>
+  <div><ul><a href='#' class='highlighter-w'><em>Add data source</em></a><br></ul>
+    <ul class='norm'>
+      <li>Add the line <br><a class='highlighter' href='#'>map.addSource('greenloop', { type: 'geojson', data: url });</a></li>
+    </ul>
+  </div>
+  <div><ul><a href='#' class='highlighter-w'><em>Add map layer</em></a><br></ul>
+    <ul class='norm'>
+      <li><a class='highlighter-x' href='#'>map.addLayer({</a></li>
+        <li><a class='highlighter-x' href='#'>"id": "greenloop",</a></li>
+        <li><a class='highlighter-x' href='#'>"type": "line",</a></li>
+    </ul>
+  </div>
+  <div><ul><a href='#' class='highlighter-w'><em>Add layer</em></a><br></ul>
+    <ul class='norm'>
+      <li><a class='highlighter-x' href='#'>"source": "greenloop",</a></li>
+      <li><a class='highlighter-x' href='#'>"layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },</a></li>
+      <li><a class='highlighter-x' href='#'>"paint": {
+            "line-color": "#41d618",
+            "line-width": 8
+        }
+    <li><a class='highlighter-x' href='#'>});</a></li>
     </ul>
   </div>
   
+  
+  <div><img src='images/code_data.png' /></div>
+    
   <div><ul><a href='http://output.jsbin.com/boyulicuho' class='highlighter-x'>View <em>map with data</em></a></ul></div>
 
 
@@ -226,6 +255,9 @@
       <li>(3) Create custom data directly in <a href='https://www.mapbox.com/studio/datasets/'><em>Studio dataset editor</em></a></li>
     </ul>
   </div>
+  
+  
+  <div><ul><a href='https://www.mapbox.com/mapbox-gl-js/examples/' class='highlighter-x'>Add interactivity with <em>GL JS</em></a></ul></div>
   
   <!-- DATA & DESIGN RESOURCES -->
   <div><ul><a href='#' class='highlighter-w'>Design and data resources.</a><br></ul>
